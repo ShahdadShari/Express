@@ -23,12 +23,6 @@ const server = http.createServer((request, response) => {
         nums = [1, 2, 3, 4]
         sum = 0
 
-        // Foreach function to add numbers together
-        // nums.forEach(function(num) {
-        //     console.log(num)
-        //     sum += num
-        // });
-
         // Arrow function to add numbers together
         nums.forEach(num => {
             console.log(num)
@@ -40,47 +34,6 @@ const server = http.createServer((request, response) => {
     // Route to show other node features
     } else if (request.url == "/node"){
         response.writeHead(200, {'Content-Type' : 'application/json'});
-
-        // Block scoping with var
-        // for (var i = 0; i < 5; ++i){
-        //     setTimeout(() => {
-        //         console.log(`Var i: ${i}`)
-        //     }, 1000)
-        // }
-
-        // Block scoping with let
-        // for (let i = 0; i < 5; ++i){
-        //     setTimeout(() => {
-        //         console.log(`Let i: ${i}`)
-        //     }, 1000)
-        // }
-
-        // Variadic function
-        // function sum(...nums) {
-        //     console.log(nums.reduce((total, a) => total + a, 0))
-        // }
-        // sum(1, 2, 4, 5, 7, 9)
-
-        // const numbers = [10, 2, 3, 7, 5, 6];
-        // // Spread operator with destructuring
-        // const [one, two, ...rest] = numbers;
-        // console.log(`One: ${one}, Two: ${two}`)
-        // console.log(`Rest: ${rest}`)
-
-        // var c = "cc"
-        // var v = "vv"
-        // // Property shorthand
-        // var e = {c, v}
-        
-        // console.log(e)
-
-        // Computed object keys
-        // var name = "hello"
-
-        // var obj = {
-        //     [name]: "world"
-        // }
-        // console.log(obj)
 
         var one = 1
         var two = 2
